@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"net"
 	"os"
+	"time"
 )
 
 /* A Simple function to verify error */
@@ -28,7 +29,8 @@ func main() {
 	i := 0
 	for {
 		_, _, err := ServerConn.ReadFromUDP(buf)
-		fmt.Println("Received:", i)
+		t0 := time.Now()
+		fmt.Println("Received:", i, "ReceviedTime:", t0)
 		i++
 		// fmt.Println("Received ", string(buf[0:n]), " from ", addr)
 
