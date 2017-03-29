@@ -41,6 +41,6 @@ func main() {
 			fmt.Println(str, err)
 		}
 		time.Sleep(time.Microsecond * 30) // 0.03ms
-		// time.Sleep(time.Second * 5)
+		// time.Sleep(time.Second * 1)
 	}
 }
