@@ -28,7 +28,7 @@ func main() {
 	i := 0
 	for {
 		_, _, err := ServerConn.ReadFromUDP(buf)
-		fmt.Println("R:", i)
+		fmt.Println("Received:", i)
 		i++
 		// fmt.Println("Received ", string(buf[0:n]), " from ", addr)
 
