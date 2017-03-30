@@ -34,7 +34,7 @@ func main() {
 		}
 		_, _, err := ServerConn.ReadFromUDP(buf)
 		t1 := time.Now()
-		fmt.Printf("Program start time:%s,sent:%06d,sent time:%40s,Elapsed time:%13s,Avg:%.3f\n", t0, i, t1, t1.Sub(t0), float64(i)/t1.Sub(t0).Seconds())
+		fmt.Printf("Program start time:%s,recevie:%06d,recevie time:%40s,Elapsed time:%13s,Avg:%.3f\n", t0, i, t1, t1.Sub(t0), float64(i)/t1.Sub(t0).Seconds())
 		// fmt.Println("Received:", i, "ReceviedTime:", t0)
 		i++
 		// fmt.Println("Received ", string(buf[0:n]), " from ", addr)
