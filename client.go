@@ -15,10 +15,10 @@ func CheckError(err error) {
 }
 
 func main() {
-	ServerAddr, err := net.ResolveUDPAddr("udp", "192.168.100.5:10001")
+	ServerAddr, err := net.ResolveUDPAddr("udp", "192.168.100.2:10001")
 	CheckError(err)
 
-	LocalAddr, err := net.ResolveUDPAddr("udp", "192.168.100.4:0")
+	LocalAddr, err := net.ResolveUDPAddr("udp", "192.168.100.1:0")
 	CheckError(err)
 
 	Conn, err := net.DialUDP("udp", LocalAddr, ServerAddr)
