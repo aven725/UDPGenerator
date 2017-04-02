@@ -1,16 +1,16 @@
 package main
 
 import (
-	"fmt"
+//	"fmt"
 	"net"
 	"os"
-	"time"
+//	"time"
 )
 
 /* A Simple function to verify error */
 func CheckError(err error) {
 	if err != nil {
-		fmt.Println("Error: ", err)
+//		fmt.Println("Error: ", err)
 		os.Exit(0)
 	}
 }
@@ -27,20 +27,20 @@ func main() {
 
 	buf := make([]byte, 1024)
 	i := 0
-	t0 := time.Now()
+//	t0 := time.Now()
 	for {
-		if i == 0 {
-			t0 = time.Now()
-		}
+//		if i == 0 {
+//			t0 = time.Now()
+//		}
 		_, _, err := ServerConn.ReadFromUDP(buf)
-		t1 := time.Now()
-		fmt.Printf("Program start time:%s,recevie:%06d,recevie time:%40s,Elapsed time:%13s,Avg:%.3f\n", t0, i, t1, t1.Sub(t0), float64(i)/t1.Sub(t0).Seconds())
+//		t1 := time.Now()
+//		fmt.Printf("Program start time:%s,recevie:%06d,recevie time:%40s,Elapsed time:%13s,Avg:%.3f\n", t0, i, t1, t1.Sub(t0), float64(i)/t1.Sub(t0).Seconds())
 		// fmt.Println("Received:", i, "ReceviedTime:", t0)
 		i++
 		// fmt.Println("Received ", string(buf[0:n]), " from ", addr)
 
 		if err != nil {
-			fmt.Println("Error: ", err)
+//			fmt.Println("Error: ", err)
 		}
 	}
 }
