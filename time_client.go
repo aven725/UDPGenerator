@@ -20,10 +20,10 @@ func main() {
 	var t0 time.Time
 	var t1 time.Time
 	breakTime := 10
-	ServerAddr, err := net.ResolveUDPAddr("udp", "127.0.0.1:10001")
+	ServerAddr, err := net.ResolveUDPAddr("udp", "192.168.100.1:10001")
 	CheckError(err)
 
-	LocalAddr, err := net.ResolveUDPAddr("udp", "127.0.0.1:0")
+	LocalAddr, err := net.ResolveUDPAddr("udp", "192.168.100.2:0")
 	CheckError(err)
 
 	Conn, err := net.DialUDP("udp", LocalAddr, ServerAddr)
