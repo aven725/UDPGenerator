@@ -43,8 +43,9 @@ func main() {
 		if err != nil {
 			//			fmt.Println(str, err)
 		}
-		time.Sleep(time.Microsecond * 1) // 0.03ms
-		// time.Sleep(time.Second * 5)
+//		time.Sleep(time.Microsecond * 1) // 0.03ms
+		time.Sleep(time.Microsecond * 10000) // 0.03ms
+//		time.Sleep(time.Second * 2)
 	}
 }
 
