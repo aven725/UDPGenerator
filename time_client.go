@@ -19,7 +19,7 @@ func CheckError(err error) {
 func main() {
 	var t0 time.Time
 	var t1 time.Time
-	breakTime := 10
+	breakTime := 180
 	ServerAddr, err := net.ResolveUDPAddr("udp", "127.0.0.1:10001")
 	CheckError(err)
 
