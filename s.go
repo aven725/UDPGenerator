@@ -43,7 +43,8 @@ func main() {
 		tS = BytesToInt64(buf[0:8])
 		tR = time.Now().UnixNano()
 
-		fmt.Printf("Sent Time:%d,Received Time:%d,Sub Time(ms):,%f\n", tS, tR, float64(tR-tS)/1000000)
+//		fmt.Printf("Sent Time:%d,Received Time:%d,Sub Time(ms):,%f\n", tS, tR, float64(tR-tS)/1000000)
+		fmt.Printf("%d,%.3f\n",i,float64(tR-tS)/1000000)
 
 		// fmt.Println(tS, tR)
 
