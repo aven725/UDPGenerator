@@ -55,9 +55,10 @@ func main() {
 		if err != nil {
 			//			fmt.Println(str, err)
 		}
-	time.Sleep(time.Nanosecond * 1100) // 0.03ms
-//		time.Sleep(time.Microsecond * 1) // 0.03ms
+//	time.Sleep(time.Nanosecond * 1100) // 0.03ms
+//		time.Sleep(time.Microsecond * 500) // 0.03ms
 		// time.Sleep(time.Second * 5)
+		 time.Sleep(time.Millisecond * 1000)
 	}
 }
 
